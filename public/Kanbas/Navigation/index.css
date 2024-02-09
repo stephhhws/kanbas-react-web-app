@@ -1,0 +1,49 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 85;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wd-kanbas-navigation li {
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+    margin-bottom: 10px; /* space between the bottom of the text and the top of the icon */
+}
+
+.wd-kanbas-navigation li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* spacing between the text, icons, and links */
+}
+
+.wd-kanbas-navigation li i {
+    color: red;
+}
+
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+    color: red;
+}
+
+.wd-kanbas-navigation li:nth-child(2) a i {
+    color: white;
+}
+
+
+
