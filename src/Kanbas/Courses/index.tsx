@@ -11,11 +11,11 @@ import CourseStatus from "./Status";
 import "./index.css"
 
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const location = useLocation();
     const course = courses.find((course) => course._id === courseId);
-
+    
     const pathSegments = location.pathname.split('/');
     const currentPage = pathSegments[pathSegments.length - 1];
 
