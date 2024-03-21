@@ -36,7 +36,7 @@ function Courses({ courses }: { courses: any[]; }) {
                     <div className="col-md-2">
                         <CourseNavigation />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-8">
                         <div
                             className=" bottom-0 end-0"
                             style={{ left: "320px", top: "50px" }} >
@@ -50,9 +50,6 @@ function Courses({ courses }: { courses: any[]; }) {
                                 <Route path="Grades" element={<Grades />} />
                             </Routes>
                         </div>
-                    </div>
-                    <div className="col-md-4">
-                        <CourseStatus />
                     </div>
 
                 </div>
