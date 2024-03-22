@@ -23,8 +23,8 @@ function AssignmentEditor() {
       dispatch(addAssignment({ ...assignment, course: courseId, _id: assignmentId }))
     } else {
       dispatch(updateAssignment(assignment))
-
     }
+
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
 

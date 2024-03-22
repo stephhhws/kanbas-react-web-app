@@ -23,6 +23,9 @@ function Assignments() {
 
   const navigate = useNavigate();
   const handleAddClick = (() => {
+    dispatch(selectAssignment({ title: "New Assignment", description: "this is the new assignment", 
+    points: "100", dueDate: "03/15/2024", 
+    availableFromDate: "02/15/2024",  availableUntilDate: "03/15/2024"}));
     navigate(`/Kanbas/Courses/${courseId}/Assignments/newAssignment`);
   })
 
